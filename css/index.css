@@ -1,4 +1,4 @@
-@import url(https://at.alicdn.com/t/font_630197_up1asfbp4fkfn7b9.css);
+@import url(https://at.alicdn.com/t/font_630197_wamx4mmjrg6cg14i.css);
 body{background:#f4f4f4;}
 /**************************** 打卡团 **********************************/
 #group{background:#fff;}
@@ -33,6 +33,38 @@ body{background:#f4f4f4;}
 #ranking .rankingbox .list-box .userbox .doyen{width:3rem;height:1.6rem;font-size:1rem;border:1px solid #ffc118;border-radius:.4rem;color:#ffc118;}
 #ranking .btnbox{margin-bottom:1rem;}
 #ranking .btnbox a.btn{width:45%;height:4rem;background:#ffc118;border-radius:.4rem;font-size:1.4rem;}
+/*************************** 连续早起 **************************/
+#continuity{padding:0 1rem;}
+#continuity .user-head>div{height:16rem;}
+#continuity .user-head .user-img{width:6rem;height:6rem;border-radius:50%;overflow:hidden;}
+#continuity .user-head .user-left{margin-right:1rem;width:40%;background:#fff;border-radius:.4rem;}
+#continuity .user-head .user-left .user-name{max-width:8rem;padding:1rem 0;overflow:hidden;-webkit-line-clamp:1;}
+#continuity .user-head .user-right>div{height:46.6%;}
+#continuity .user-head .user-right .defeat,#continuity .user-head .user-right .bottom{background:#fff;border-radius:.4rem;}
+#continuity .user-head .user-right .defeat,#continuity .user-head .user-right .time,#continuity .user-head .user-right .total{padding:1rem 0;font-size:1rem;}
+#continuity .user-head .user-right .defeat .dk,#continuity .user-head .user-right .time .dk,#continuity .user-head .user-right .total .dk{font-size:2rem;}
+#continuity .user-head .user-right .bottom{margin-top:1rem;}
+#continuity .user-head .user-right .bottom .line{width:1px;height:100%;background:#f4f4f4;}
+#continuity .user-right .number{font-size:1.4rem;}
+#continuity .teambox{background:#fff;border-radius:.4rem;}
+#continuity .teambox{margin:1rem 0;}
+#continuity .teambox .t-title{padding:1rem;font-size:1.2rem;}
+#continuity .teambox .t-title a.found{color:#ffc118;}
+#continuity .teambox .list{padding:.6rem;border-top:1px solid #eee;border-bottom:1px solid #eee;}
+#continuity .teambox .list .user-img{width:4rem;height:4rem;border-radius:50%;overflow:hidden;margin-right:.6rem;}
+#continuity .teambox .list .user-name-site{font-size:1.2rem;}
+#continuity .teambox .list .user-name-site>div{line-height: 2rem;}
+#continuity .teambox .list .user-name-site .name{max-width:8rem;overflow:hidden;-webkit-line-clamp:1;}
+#continuity .teambox .list .user-name-site .site{font-size:1.2rem;color:#bbb;}
+#continuity .teambox .list .user-name-site .site i.dk{font-size:2rem;}
+#continuity .teambox .list .number{font-size:1.2rem;color:#bbb;}
+#continuity .teambox .list .number i.dk{font-size:2rem;}
+
+
+
+
+
+#continuity .teambox .list .join a.btn{width:4rem;height:2rem;background:#ffc118;border-radius:.2rem;font-size:1.2rem;}
 
 
 
