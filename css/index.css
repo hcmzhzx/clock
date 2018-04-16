@@ -1,0 +1,52 @@
+@import url(https://at.alicdn.com/t/font_630197_up1asfbp4fkfn7b9.css);
+body{background:#f4f4f4;}
+/**************************** 打卡团 **********************************/
+#group{background:#fff;}
+#group .user{background:url("../image/clock-bj.png")no-repeat top;background-size:contain;padding:2rem 0 5rem;}
+#group .user .user-img{width:7rem;height:7rem;overflow:hidden;border-radius:50%;}
+#group .user .user-name{margin-top:1rem;font-size:1.4rem;}
+#group .text-img{width:20rem;}
+#group .icon{width:14rem;}
+#group .text{line-height:3rem;font-size:1.4rem;color:#bbb;}
+#group .btn{margin:1rem auto;width:30rem;height:4rem;border-radius:.4rem;background:#ffc118;font-size:1.4rem;}
+/**************************** 打卡团队 **********************************/
+#ranking{padding:0 1rem;}
+#ranking .user-head{margin:1rem 0;}
+#ranking .user-head .user-img{width:6rem;height:6rem;overflow:hidden;border-radius:50%;margin-right:1rem;}
+#ranking .user-head .user-name{max-width:20rem;overflow:hidden;-webkit-line-clamp:1;}
+#ranking .user-head .icon i.dk{width:2.4rem;height:2.4rem;font-size:2.4rem;}
+#ranking .r-title{background:#fff;border-radius:.4rem;box-shadow:0 0 8px 2px rgba(0,0,0,.1);padding:.6rem 0;}
+#ranking .r-title i.dk{font-size:2.6rem;}
+#ranking .r-title .number{padding:.6rem 0;font-size:1.4rem;}
+#ranking .r-title span{font-size:1.2rem;}
+#ranking .rankingbox{margin:1rem 0;background:#fff;border-radius:.4rem;box-shadow:0 0 8px 2px rgba(0,0,0,.1);max-height:33rem;}
+#ranking .rankingbox .list-box{font-size:1.2rem;}
+#ranking .rankingbox .l-title{padding:.6rem 0;font-size:1.4rem;}
+#ranking .rankingbox .list-box tr{height:5rem;}
+#ranking .rankingbox .list-box tr:first-child{height:4rem;border-top:1px solid #eee;border-bottom:1px solid #eee;font-size:1.2rem;}
+#ranking .rankingbox .list-box tr td{text-align:center;}
+#ranking .rankingbox .list-box tr:first-child td:nth-child(1){width:14%;}
+#ranking .rankingbox .list-box tr:first-child td:nth-child(2){width:36%;}
+#ranking .rankingbox .list-box .top{width:2.2rem;height:2.6rem;display:inline-block;}
+#ranking .rankingbox .list-box .userbox .user-img{width:3.6rem;height:3.6rem;border-radius:50%;overflow:hidden;}
+#ranking .rankingbox .list-box .userbox .user-name{margin:0 .2rem;font-size:1rem;}
+#ranking .rankingbox .list-box .userbox .doyen{width:3rem;height:1.6rem;font-size:1rem;border:1px solid #ffc118;border-radius:.4rem;color:#ffc118;}
+#ranking .btnbox{margin-bottom:1rem;}
+#ranking .btnbox a.btn{width:45%;height:4rem;background:#ffc118;border-radius:.4rem;font-size:1.4rem;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

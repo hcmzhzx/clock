@@ -1,0 +1,69 @@
+﻿@media screen and (min-width: 320px){ html,body{font-size: 10px;} }
+@media screen and (min-width: 360px){ html,body{font-size: 11px;} }
+@media screen and (min-width: 375px){ html,body{font-size: 12px;} }
+@media screen and (min-width: 412px){ html,body{font-size: 13px;} }
+@media screen and (min-width: 640px){ html,body{font-size: 20px;} }
+@media screen and (min-width: 768px){ html,body{font-size: 24px;} }
+@media screen and (min-width: 960px){ html,body{font-size: 30px;} }
+@media screen and (min-width: 1024px){ html,body{font-size: 32px;} }
+*{margin:0;padding:0;box-sizing:border-box;-webkit-touch-callout:none;}
+html,body,div,ul,ol,li,dl,dt,dd,form,input,textarea,table,h1,h2,h3,h4,p,span,a,em,i,img{font-style:normal;}
+html,body{height:100%;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100% !important;font-family: "Roboto", "Open Sans", "PingFang", "PingFang SC", "PingFang HK", "PingFang TC", "Microsoft YaHei", "Microsoft JhengHei", "Helvetica Neue",'\5FAE\8F6F\96C5\9ED1',Arial,'\9ED1\4F53','\5B8B\4F53', sans-serif;}
+iframe,a,img{border:none;}
+a,a:hover,a:visited,a:active{text-decoration:none;color:inherit;/*-webkit-tap-highlight-color:rgba(0, 0, 0, 0);*/}
+ol,ul{list-style-type:none;}
+ul li, ol li{box-sizing: border-box;list-style:none;}
+h1,h2,h3{font-weight:normal;}
+table{border-collapse:collapse;}
+input{font-family:'\5FAE\8F6F\96C5\9ED1','\9ED1\4F53','\5B8B\4F53';-webkit-appearance: none;}
+input,button,select,textarea{font:inherit;outline:none;border:0;border-radius: 0;-webkit-tap-highlight-color: transparent;appearance: none;-webkit-appearance: none;background: transparent;line-height: normal;-webkit-writing-mode: horizontal-tb;resize: none;color: inherit;white-space: pre-wrap;word-wrap: break-word;-webkit-rtl-ordering: logical;user-select: text;/*flex-direction: column;*/}
+input::-webkit-outer-spin-button,input::-webkit-inner-spin-button{-webkit-appearance:none !important;margin:0;}
+.twinkle{-webkit-tap-highlight-color:transparent;}  /*ios下点击闪现灰色半透明背景*/
+/**************************************************/
+.flex{display: -webkit-box;}
+.flexv{display: -webkit-box; -webkit-box-orient: vertical;}
+.flexitem{display: -webkit-box; -webkit-box-flex: 1; -webkit-flex: 1; flex: 1;}
+.flexitemv{display: -webkit-box; -webkit-box-flex: 1; -webkit-flex: 1; flex: 1; -webkit-box-orient: vertical;}
+.centerv{-webkit-box-align: center;}
+.centerh{-webkit-box-pack: center;}
+.center{-webkit-box-align: center; -webkit-box-pack: center;}
+.endh{-webkit-box-pack: end;}
+.endv{-webkit-box-align: end;}
+.endc{-webkit-box-align: end; -webkit-box-pack: center;}
+.endvc{-webkit-box-align: baseline;-webkit-box-pack: end;}
+.end{-webkit-box-align: end; -webkit-box-pack: end;}
+.between{display:flex;justify-content:space-between;align-items:center;} /*两端对齐*/
+.around{display:flex;justify-content:space-around;align-items:center;}  /*等间距*/
+.br{display: flex;flex-wrap:wrap;}  /*换行*/
+.wrap{height:100%;}
+.fitimg{width:100%;height:100%;}
+.radimg{width:100%;height:100%;border-radius:50%;}
+.mainbox{position:relative;overflow-x:hidden;overflow-y:auto;-webkit-overflow-scrolling:touch;}
+.mainbox::-webkit-scrollbar{display: none;} /*清除滚动条*/
+select,textarea::-webkit-scrollbar{display: none;} /*清除滚动条*/
+#more{width:100%;height:5rem;}
+#more i{width:1.6rem;height:1.6rem;display:inline-block;border-width:1px;border-style:solid;border-color:#ccc #ccc #222 #222;border-radius:50%;-webkit-animation:loading 1s infinite linear;animation:loading 1s infinite linear;vertical-align:-0.3rem;}
+#more span{font-size:1.2em;padding-left:.8rem;color:#999;}
+/************************ 动画 **************************/
+@keyframes progresses{0%{transform: rotate(0deg);}100%{transform: rotate(360deg);}}
+@-webkit-keyframes progresses{0%{-webkit-transform: rotate(0deg);}100%{-webkit-transform: rotate(360deg);}}
+@-webkit-keyframes loading{0% {-webkit-transform: rotate(0deg);transform: rotate(0deg);} 100% {-webkit-transform: rotate(360deg);transform: rotate(360deg);}}
+@keyframes loading{0% {-webkit-transform: rotate(0deg); transform: rotate(0deg);} 100% {-webkit-transform: rotate(360deg); transform: rotate(360deg);}}
+@keyframes twinkling{0%{opacity: 0; visibility: hidden;}100%{opacity: 1; visibility: visible;}}
+@-webkit-keyframes twinkling{0%{opacity: 0; visibility: hidden;}100%{opacity: 1; visibility: visible;}}
+/*****************************自定义加载****************************************/
+#loading{position: fixed; top: 0; right: 0; left: 0; bottom: 0; background: rgba(0,0,0,0.2); z-index: 99999999;}
+#loading .container{position: absolute; top: 50%; left: 50%; margin-left: -5rem; margin-top: -5rem; width: 9rem; height: 9rem; padding: 1rem; border-radius: 0.6rem; background: #333; display: -webkit-box; -webkit-box-pack: center; -webkit-box-align: center; -webkit-box-orient: vertical; overflow: hidden;}
+#loading .loader,#loading .loader:before,#loading .loader:after{border-radius: 50%;}
+#loading .loader:before,#loading .loader:after {position: absolute; content: '';}
+#loading .loader:before{width: 2.2rem; height: 4.4rem; background: #333; border-radius: 4.4rem 0 0 4.4rem; top: -0.2rem; left: -0.4rem; -webkit-transform-origin: 2.2rem 2.1rem; transform-origin: 2.2rem 2.1rem; -webkit-animation: progresses 2s infinite ease 1.5s; animation: progresses 2s infinite ease 1.5s;}
+#loading .loader{font-size: 1.1rem; text-indent: -99999rem; margin: 0 auto; position: relative; width: 4rem; height: 4rem; box-shadow: inset 0 0 0 0.4rem #FFF;}
+#loading .loader:after{width: 2.2rem; height: 4.4rem; background: #333; border-radius: 0 4.4rem 4.4rem 0; top: -0.3rem; left: 2rem; -webkit-transform-origin: 0px 2.2rem; transform-origin: 0px 2.2rem; -webkit-animation: progresses 2s infinite ease; animation: progresses 2s infinite ease;}
+#loading .text{color: #fff; font-size: 1.2rem; text-align: center; padding-top: 0.8rem;}
+/*****************************自定义弹窗****************************************/
+#alert{position: fixed; top: 0; left: 0; right: 0; bottom: 0; overflow: hidden; z-index: 1000; background: rgba(0,0,0,0.5);}
+#alert .content{position: absolute; top: 50%; left: 50%; width: 80%; max-width: 32rem; background: #fff; border-radius: 0.5rem; overflow: hidden; transition: transform 0.2s linear; -webkit-transition: transform 0.2s linear;  visibility: hidden;}
+/*#alert .content .title{padding: 1rem; line-height: 2rem; font-size: 1.6rem; font-weight:bold; text-align: center;}*/
+/*#alert .content .text{padding: 1rem; line-height: 24px; font-size: 1.4rem; max-height: 23rem; overflow: auto; margin: 1rem 0; text-align: center;}*/
+/*#alert .content .button{border-top: 1px solid #eee;}*/
+/*#alert .content .button a{float: left; text-align: center; height: 4.6rem; line-height: 4.6rem; overflow:hidden; text-overflow: ellipsis; white-space: nowrap; font-size: 1.4rem; width: 50%; border-left: 1px solid #eee; margin-left: -1px;}*/
