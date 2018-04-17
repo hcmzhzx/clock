@@ -7,7 +7,7 @@ body{background:#f4f4f4;}
 #group .user .user-name{margin-top:1rem;font-size:1.4rem;}
 #group .text-img{width:20rem;}
 #group .icon{width:14rem;}
-#group .text{line-height:3rem;font-size:1.4rem;color:#bbb;}
+#group .text{line-height:2rem;font-size:1.4rem;color:#bbb;}
 #group .btn{margin:1rem auto;width:30rem;height:4rem;border-radius:.4rem;background:#ffc118;font-size:1.4rem;}
 /**************************** 打卡团队 **********************************/
 #ranking{padding:0 1rem;}
@@ -19,13 +19,13 @@ body{background:#f4f4f4;}
 #ranking .r-title i.dk{font-size:2.6rem;}
 #ranking .r-title .number{padding:.6rem 0;font-size:1.4rem;}
 #ranking .r-title span{font-size:1.2rem;}
-#ranking .rankingbox{margin:1rem 0;background:#fff;border-radius:.4rem;box-shadow:0 0 8px 2px rgba(0,0,0,.1);max-height:33rem;}
-#ranking .rankingbox .list-box{font-size:1.2rem;}
+#ranking .rankingbox{margin:1rem 0;background:#fff;border-radius:.4rem;box-shadow:0 0 8px 2px rgba(0,0,0,.1);min-height:calc(100% - 24rem);}
+#ranking .rankingbox .list-box{width:100%;font-size:1.2rem;}
 #ranking .rankingbox .l-title{padding:.6rem 0;font-size:1.4rem;}
 #ranking .rankingbox .list-box tr{height:5rem;}
 #ranking .rankingbox .list-box tr:first-child{height:4rem;border-top:1px solid #eee;border-bottom:1px solid #eee;font-size:1.2rem;}
 #ranking .rankingbox .list-box tr td{text-align:center;}
-#ranking .rankingbox .list-box tr:first-child td:nth-child(1){width:14%;}
+#ranking .rankingbox .list-box tr:first-child td:nth-child(1){width:16%;}
 #ranking .rankingbox .list-box tr:first-child td:nth-child(2){width:36%;}
 #ranking .rankingbox .list-box .top{width:2.2rem;height:2.6rem;display:inline-block;}
 #ranking .rankingbox .list-box .userbox .user-img{width:3.6rem;height:3.6rem;border-radius:50%;overflow:hidden;}
@@ -33,50 +33,57 @@ body{background:#f4f4f4;}
 #ranking .rankingbox .list-box .userbox .doyen{width:3rem;height:1.6rem;font-size:1rem;border:1px solid #ffc118;border-radius:.4rem;color:#ffc118;}
 #ranking .btnbox{margin-bottom:1rem;}
 #ranking .btnbox a.btn{width:45%;height:4rem;background:#ffc118;border-radius:.4rem;font-size:1.4rem;}
+
+#alert .amend{padding:3rem 1rem;}
+#alert .amend input{width:100%;height:4rem;background:#e5e5e5;padding:.6rem 1rem;border-radius:.4rem;font-size:1.2rem;}
+#alert .amend .btnbox button{width:10rem;height:4rem;margin-top:3rem;border-radius:2rem;font-size:1.4rem;}
+#alert .amend .btnbox button:first-child{background:#999;color:#fff;}
+#alert .amend .btnbox button:last-child{background:#ffc219;}
 /*************************** 连续早起 **************************/
 #continuity{padding:0 1rem;}
 #continuity .user-head>div{height:16rem;}
 #continuity .user-head .user-img{width:6rem;height:6rem;border-radius:50%;overflow:hidden;}
-#continuity .user-head .user-left{margin-right:1rem;width:40%;background:#fff;border-radius:.4rem;}
+#continuity .user-head .user-left{margin-right:1rem;width:40%;}
 #continuity .user-head .user-left .user-name{max-width:8rem;padding:1rem 0;overflow:hidden;-webkit-line-clamp:1;}
+#continuity .user-head .user-left span{text-align:center;font-size:1rem;color:#bbb;}
 #continuity .user-head .user-right>div{height:46.6%;}
-#continuity .user-head .user-right .defeat,#continuity .user-head .user-right .bottom{background:#fff;border-radius:.4rem;}
-#continuity .user-head .user-right .defeat,#continuity .user-head .user-right .time,#continuity .user-head .user-right .total{padding:1rem 0;font-size:1rem;}
+#continuity .user-head .user-left,#continuity .user-head .user-right .defeat,#continuity .user-head .user-right .bottom,#continuity .teambox,#continuity .rankingbox{background:#fff;border-radius:.4rem;}
+#continuity .user-head .user-right .defeat,#continuity .user-head .user-right .time,#continuity .user-head .user-right .total{padding:1rem 0;font-size:1.2rem;}
+#continuity .user-head .user-right .time,#continuity .user-head .user-right .total{width:50%;}
 #continuity .user-head .user-right .defeat .dk,#continuity .user-head .user-right .time .dk,#continuity .user-head .user-right .total .dk{font-size:2rem;}
 #continuity .user-head .user-right .bottom{margin-top:1rem;}
 #continuity .user-head .user-right .bottom .line{width:1px;height:100%;background:#f4f4f4;}
 #continuity .user-right .number{font-size:1.4rem;}
-#continuity .teambox{background:#fff;border-radius:.4rem;}
 #continuity .teambox{margin:1rem 0;}
 #continuity .teambox .t-title{padding:1rem;font-size:1.2rem;}
 #continuity .teambox .t-title a.found{color:#ffc118;}
-#continuity .teambox .list{padding:.6rem;border-top:1px solid #eee;border-bottom:1px solid #eee;}
+#continuity .teambox .list{padding:.6rem;border-top:1px solid #eee;}
 #continuity .teambox .list .user-img{width:4rem;height:4rem;border-radius:50%;overflow:hidden;margin-right:.6rem;}
-#continuity .teambox .list .user-name-site{font-size:1.2rem;}
+#continuity .teambox .list .user-name-site{width:12rem;font-size:1.2rem;}
 #continuity .teambox .list .user-name-site>div{line-height: 2rem;}
-#continuity .teambox .list .user-name-site .name{max-width:8rem;overflow:hidden;-webkit-line-clamp:1;}
+#continuity .teambox .list .user-name-site .name{overflow:hidden;-webkit-line-clamp:1;}
 #continuity .teambox .list .user-name-site .site{font-size:1.2rem;color:#bbb;}
 #continuity .teambox .list .user-name-site .site i.dk{font-size:2rem;}
 #continuity .teambox .list .number{font-size:1.2rem;color:#bbb;}
 #continuity .teambox .list .number i.dk{font-size:2rem;}
-
-
-
-
-
-#continuity .teambox .list .join a.btn{width:4rem;height:2rem;background:#ffc118;border-radius:.2rem;font-size:1.2rem;}
-
-
-
-
-
-
-
-
-
-
-
-
+#continuity .teambox .list .join a.right{font-size:2rem;}
+#continuity .rankingbox{min-height:calc(100% - 28rem);}
+#continuity .rankingbox .r-title{height:3rem;padding:0 1rem;font-size:1.4rem;}
+#continuity .rankingbox .list-box{width:100%;}
+#continuity .rankingbox .list-box tr{height:5rem;}
+#continuity .rankingbox .list-box tr td{text-align:center;}
+#continuity .rankingbox .list-box .top{width:2.2rem;height:2.6rem;display:inline-block;}
+#continuity .rankingbox .list-box .userbox .user-img{width:3.6rem;height:3.6rem;margin-right:.6rem;border-radius:50%;overflow:hidden;}
+#continuity .rankingbox .list-box .userbox .together{line-height:1.8rem;font-size:1.2rem;}
+#continuity .rankingbox .list-box .userbox .together .day,#continuity .rankingbox .list-box tr td:nth-child(3){color:#bbb}
+#continuity .rankingbox .list-box tr td:nth-child(3){font-size:1.2rem;}
+#continuity .rankingbox .list-box .praise i.dk{font-size:2.6rem;}
+#continuity .rankingbox .list-box .praise i.sx{color:#ff592d;}
+#continuity .rankingbox .list-box .praise span{width:5rem;height:2rem;border-radius:.4rem;font-size:1rem;}
+#continuity .rankingbox .list-box .praise .hint{background:#ffc118;}
+#continuity .rankingbox .list-box .praise .no-hint{border:1px solid #bbb;}
+#continuity .create{width:100%;height:4rem;background:#ffc118;border-radius:.4rem;margin:1rem 0;font-size:1.4rem;}
+#continuity .hinted{padding:1rem;border-radius:.4rem;background:rgba(0,0,0,.8);font-size:1.2rem;color:#fff;position:absolute;top:60%;left:50%;transform:translate(-50%,-50%);}
 
 
 

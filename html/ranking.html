@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="../css/index.css">
 </head>
 <body>
-<div id="ranking" class="flexv wrap">
+<div id="ranking" class="flexv mainbox wrap">
     <div class="between user-head">
         <div class="flexitem centerv user-info">
             <div class="user-img"><img src="../image/user.jpg" class="radimg"></div>
@@ -35,7 +35,7 @@
             <span>累计打卡</span>
         </div>
     </div>
-    <div class="flexitemv rankingbox mainbox">
+    <div class="flexv rankingbox">
         <table class="list-box">
             <caption class="l-title">2018年04月16日团队打卡排名</caption>
             <tbody>
@@ -89,12 +89,58 @@
         </table>
     </div>
     <div class="around btnbox">
-        <a href="javascript:;" class="flex center btn">喊好友加入</a>
-        <a href="javascript:;" class="flex center btn">查看早安图</a>
+        <a href="javascript:;" class="flex center btn join">喊好友加入</a>
+        <a href="javascript:;" class="flex center btn check">查看早安图</a>
     </div>
 </div>
 </body>
+<script src="https://cdn.bootcss.com/zepto/1.2.0/zepto.min.js"></script>
+<script src="../js/functions.js"></script>
 <script type="text/javascript">
-  
+    // 修改
+    $('.user-head i.edit').click(function(){
+        let amend = `<div id="alert">
+                <form class="content amend">
+                    <input type="text" placeholder="请输入要修改的名称(最多10个字哦~)" maxlength="10">
+                    <div class="between btnbox">
+                        <button type="button" class="cancel">取消</button>
+                        <button type="submit" class="affirm">确认</button>
+                    </div>
+                </form>
+            </div>`;
+        $('body').append(amend);
+        let offset = {'height':$('#alert .content').height(),'width': $('#alert .content').width()};
+        $('#alert .content').css({
+            'margin' : parseInt(-offset.height/2) + 'px 0 0 ' + parseInt(-offset.width/2) + 'px',
+            'transform' : 'scale(0)',
+            '-webkit-transform' : 'scale(0)'
+        });
+        setTimeout(function (){
+            $('#alert .content').css({
+                'visibility' : 'visible',
+                'transform' : 'scale(1)',
+                '-webkit-transform' : 'scale(1)'
+            });
+        },200);
+        $('#alert .btnbox button').click(function () {
+            setTimeout(function (){$('#alert').remove();},200);
+        });
+    });
+
+    // 退出
+    $('.user-head i.exit').click(function () {
+        showAlert('温馨提示', '确定退出吗？', [{t:'取消'}, {t:'确定'}]);
+    });
+
+    // 加入
+    $('a.join').click(function() {
+        showAlert('邀请卡已发送', '前往公众号查看，召集好友加入打卡团', [{t:'关闭'}, {t:'查看'}]);
+    });
+
+    // 查看
+    $('a.check').click(function() {
+        showAlert('早安图已发送', '前往共公众号查看，召集好友一起打卡', [{t:'关闭'}, {t:'查看'}]);
+    });
+
 </script>
 </html>
