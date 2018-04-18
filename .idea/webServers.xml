@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="559199ad-1a75-4e18-8768-8026ca8e4b0f" name="hcm" url="http://use.zx85.net/chengming/clock">
+        <fileTransfer host="123.207.123.182" port="21" rootFolder="/public_html/chengming/clock">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="21" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

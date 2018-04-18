@@ -61,7 +61,7 @@ select,textarea::-webkit-scrollbar{display: none;} /*清除滚动条*/
 #loading .loader:after{width: 2.2rem; height: 4.4rem; background: #333; border-radius: 0 4.4rem 4.4rem 0; top: -0.3rem; left: 2rem; -webkit-transform-origin: 0px 2.2rem; transform-origin: 0px 2.2rem; -webkit-animation: progresses 2s infinite ease; animation: progresses 2s infinite ease;}
 #loading .text{color: #fff; font-size: 1.2rem; text-align: center; padding-top: 0.8rem;}
 /*****************************自定义弹窗****************************************/
-#alert{position: fixed; top: 0; left: 0; right: 0; bottom: 0; overflow: hidden; z-index: 1000; background: rgba(0,0,0,0.5);}
+#alert{position: fixed; top: 0; left: 0; right: 0; bottom: 0; overflow: hidden; z-index: 100; background: rgba(0,0,0,0.5);}
 #alert .mack{position: absolute;top: 0;left: 0;width: 100%;height: 100%;}
 #alert .content{position: absolute; top: 50%; left: 50%; width: 80%; max-width: 32rem; background: #fff; border-radius: 0.5rem; overflow: hidden; transition: transform 0.2s linear; -webkit-transition: transform 0.2s linear;  visibility: hidden;}
 #alert .content .title{padding: 1rem; line-height: 2rem; font-size: 1.6rem; font-weight:bold; text-align: center;}

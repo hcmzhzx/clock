@@ -148,6 +148,8 @@
     </div>
     <a href="javascript:;" class="flex center create">生成打卡图</a>
 </div>
+
+<img src="" alt="打卡图" class="fitimg call" style="display:none;">
 <img src="../image/call-up.jpg" class="fitimg call-up" style="display:none;">
 <img src="../image/qrcode.png" class="fitimg qrcode" style="display:none;">
 </body>
@@ -195,7 +197,9 @@
             //绘制背景图
             ctx.drawImage(imgs, 0, 0);
             ctx.drawImage(qrcode, can.width-496, can.height-500, 260, 260);
-            var src = can.toDataURL('image/jpeg')
+            document.querySelector(".call").setAttribute('src',can.toDataURL('image/jpeg'));
+            document.querySelector(".call").style.display="block";
+            $('#continuity').hide();
         }
     });
 </script>

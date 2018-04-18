@@ -101,10 +101,10 @@
     $('.user-head i.edit').click(function(){
         let amend = `<div id="alert">
                 <form class="content amend">
-                    <input type="text" placeholder="请输入要修改的名称(最多10个字哦~)" maxlength="10">
+                    <input type="text" name="name" data-rule="*2-10" data-errmsg="最少2个字符" placeholder="请输入要修改的名称(最多10个字哦~)" maxlength="10">
                     <div class="between btnbox">
                         <button type="button" class="cancel">取消</button>
-                        <button type="submit" class="affirm">确认</button>
+                        <button type="button" class="affirm">确认</button>
                     </div>
                 </form>
             </div>`;
@@ -122,8 +122,20 @@
                 '-webkit-transform' : 'scale(1)'
             });
         },200);
-        $('#alert .btnbox button').click(function () {
-            setTimeout(function (){$('#alert').remove();},200);
+
+        // 表单验证
+        var checker = new checkForm({
+            form : '.amend',
+            btn : '.affirm',
+            error : function (ele,err){showMsg(err);},
+            complete : function (ele){
+                var post = $(ele).serializeArray()[0];
+                $('.user-info .user-name').text(post.value);
+            }
+        });
+        //移除弹窗
+        $('.btnbox button').click(function () {
+            $('#alert').remove();
         });
     });
 
